@@ -1,0 +1,12 @@
+h1, p {
+    margin: 0;
+}
+
+table, td {
+    border: solid 1px black;
+}
+
+tr#ctrlButtons td {
+    display: flex;
+    justify-content: space-around;
+}
