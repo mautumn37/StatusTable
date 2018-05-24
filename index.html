@@ -10,23 +10,22 @@
           <h1>ステータス管理テーブル</h1>
       </header>
       
-      <div id="tableInput">
-          <form autocomplete="off">
-            <table>
-                <tr>
-                    <td>
-                        <p>ユニット名：</p>
-                        <input type="text" id="tname">
-                    </td>
-                </tr>
-                <tr id="ctrlButtons">
-                    <td>
-                        <button id="badd" type="button" name="ctrl" onclick=";">+</button>
-                        <button id="bdel" type="button" name="ctrl" onclick=";">-</button>
-                    </td>
-                </tr>
-              </table>
+      <div id="inputs">
+          <form name="mainForm" autocomplete="off">
+              <div id="tableInput">
+                    <div>
+                        <span>ユニット名：</span>
+                        <input type="text" name="unitName">
+                    </div>
+                    <div id="ctrlButtons">
+                        <button type="button" name="badd" onclick="addParam();">+</button>
+                        <button type="button" name="bdel" onclick="delParam();">-</button>
+                        <button type="button" name="bapp" onclick="addTbl();">テーブル追加</button>
+                    </div>
+                </div>
             </form>
       </div>
+      <div id="tblDiv"></div>
+      <script src="resources/scripts/functions.js"></script>
   </body>
 </html>

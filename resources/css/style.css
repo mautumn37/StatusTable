@@ -1,12 +1,41 @@
-h1, p {
-    margin: 0;
+body {
+    background-color: mintcream;
+    background-image: url("../concrete-wall.png");
 }
 
-table, td {
-    border: solid 1px black;
+h1 {
+    margin-top: 0;
 }
 
-tr#ctrlButtons td {
+div#tableInput {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    display: inline-block;
+}
+
+div#tableInput div {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+div#ctrlButtons {
     display: flex;
     justify-content: space-around;
+}
+
+#tblDiv {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+div#tblDiv div {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+div#tblDiv div{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
